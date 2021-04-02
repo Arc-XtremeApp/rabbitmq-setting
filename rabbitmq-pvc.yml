@@ -1,6 +1,18 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
+  name: data-rabbitmq-0
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: rabbitmq-cluster
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
   name: data-rabbitmq-1
 spec:
   accessModes:
@@ -26,18 +38,6 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: data-rabbitmq-3
-spec:
-  accessModes:
-    - ReadWriteOnce
-  storageClassName: rabbitmq-cluster
-  resources:
-    requests:
-      storage: 1Gi
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: data-rabbitmq-4
 spec:
   accessModes:
     - ReadWriteOnce
