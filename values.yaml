@@ -60,12 +60,12 @@ auth:
   ## RabbitMQ application username
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  username: user
+  username: admin
 
   ## RabbitMQ application password
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  # password:
+  password: admin
   # existingPasswordSecret: name-of-existing-secret
 
   ## Erlang cookie to determine whether different nodes are allowed to communicate with each other
@@ -325,7 +325,7 @@ extraSecrets: {}
 
 ## Number of RabbitMQ replicas to deploy
 ##
-replicaCount: 1
+replicaCount: 2
 
 ## Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
