@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim1
+  name: data-rabbitmq-01
 spec:
   accessModes:
     - ReadWriteOnce
@@ -13,7 +13,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim2
+  name: data-rabbitmq-02
 spec:
   accessModes:
     - ReadWriteOnce
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim3
+  name: data-rabbitmq-03
 spec:
   accessModes:
     - ReadWriteOnce
@@ -37,7 +37,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: claim4
+  name: data-rabbitmq-04
 spec:
   accessModes:
     - ReadWriteOnce
