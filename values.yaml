@@ -60,12 +60,12 @@ auth:
   ## RabbitMQ application username
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  username: admin
+  username: user
 
   ## RabbitMQ application password
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  password: admin
+  # password:
   # existingPasswordSecret: name-of-existing-secret
 
   ## Erlang cookie to determine whether different nodes are allowed to communicate with each other
@@ -325,7 +325,7 @@ extraSecrets: {}
 
 ## Number of RabbitMQ replicas to deploy
 ##
-replicaCount: 2
+replicaCount: 1
 
 ## Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
@@ -546,7 +546,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  # storageClass: "rabbitmq-cluster"
+  # storageClass: "-"
   ## selector can be used to match an existing PersistentVolume
   ## selector:
   ##   matchLabels:
