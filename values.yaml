@@ -546,7 +546,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  storageClass: "rabbitmq-cluster"
+  # storageClass: "rabbitmq-cluster"
   ## selector can be used to match an existing PersistentVolume
   ## selector:
   ##   matchLabels:
