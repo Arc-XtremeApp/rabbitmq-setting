@@ -1,4 +1,5 @@
 # rabbitmq-setting
+裝helm
 
 https://helm.sh/docs/intro/install/
 
